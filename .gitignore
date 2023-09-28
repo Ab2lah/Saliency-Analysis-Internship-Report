@@ -4,6 +4,7 @@
 *.log
 *.out
 *.bbl
-*.fdb
+*.fdb_latexmk
 *.gz
 *.toc
+*.blg
