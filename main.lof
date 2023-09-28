@@ -1,0 +1,32 @@
+\babel@toc {french}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Campus de Télécom SudParis}}{7}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces organigramme de Télécom SudParis}}{9}{figure.2.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemple d'image de cellule infectée}}{11}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Activations par rapport à la classe de vérité terrain (Papier toilette) : non pertinente (en haut) et pertinente (en bas), avec la boîte de vérité de terain mise en évidence en vert.}}{13}{figure.3.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemples d'image provenants d'IMAGENET avec leurs boîtes de vérité terrain}}{15}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Image d'IMAGENET avec sa boîte de vérité terrain (en vert) et sa CAM par rapport à la classe de vérité terrain (Tanche)}}{16}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Aperçu de Grad-CAM\blx@tocontentsinit {0}\cite {Selvaraju_2017_ICCV}}}{18}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Aperçu de Score-Cam\blx@tocontentsinit {0}\cite {Wang_2020_CVPR_Workshops}}}{19}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Fonction de perte composé de CE et HAGTR}}{20}{figure.4.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Fonction de perte composé de CE multipliée par MAGTR}}{23}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Courbes d'apprentissage avec la fonction de perte "produit" \ref {fig:Fonction de perte composé de CE multipliée par MAGTR}}}{24}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Fonction de perte composé de CE divisée par MAGTR}}{25}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Courbes d'apprentissage avec la fonction de perte "division" \ref {fig:Fonction de perte composé de CE divisée par MAGTR}}}{25}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Fonction de perte de la somme pondérée de CE et MAGTR}}{26}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Courbes d'apprentissage avec la fonction de perte "somme-pondérée"\ref {fig:Fonction de perte de la somme pndérée de CE et MAGTR}}}{27}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Cartes d'activation par rapport à la classe de vérité terrain (1ère image : Noeud papillon, 2ème image : Noeud papillon, 3ème image : blouse de laboratoire, 4ème image : MAmba vert, 5ème image : Grand requin blanc, 6ème image : Rainette) pour les images correctement classées par les modèles après les époques 0 et 18, tout en présentant un MAGTR faible. À gauche, les images originales ; au milieu, les CAMs de l'époque 0 ; à droite, les CAMs de l'époque 18.}}{28}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Matrice de confusion du modèle Resnet50 \blx@tocontentsinit {0}\cite {he2016identity} entraîné sur l'entropie croisée pour 14 classes d'ImageNet (époque 0 de l'essai : somme pondérée \ref {fig:Courbes d'apprentissage de l'expérience "somme-pondérée"}).}}{29}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Matrice de confusion du modèle Resnet50 \blx@tocontentsinit {0}\cite {he2016identity} entraîné sur la somme pondérée de l'entropie croisée et le MAGTR pour 14 classes d'ImageNet (époque 14 de l'essai : somme pondérée \ref {fig:Courbes d'apprentissage de l'expérience "somme-pondérée"}).}}{30}{figure.5.9}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Fonction de perte de la somme pondérée de CE, MAGTR et MANGTR}}{38}{figure.9.1}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Courbes d'apprentissage avec la fonction de perte "somme-pondérée (33,33,34)" \ref {fig:Fonction de perte de la somme pndérée de CE, MAGTR et MANGTR}}}{39}{figure.9.2}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Courbes d'apprentissage avec la fonction de perte "somme-pondérée (5,5,90)" \ref {fig:Fonction de perte de la somme pndérée de CE, MAGTR et MANGTR}}}{39}{figure.9.3}%
+\contentsline {figure}{\numberline {9.4}{\ignorespaces Courbes d'apprentissage avec la fonction de perte "somme-pondérée (5,0,95)" \ref {fig:Fonction de perte de la somme pndérée de CE, MAGTR et MANGTR}}}{40}{figure.9.4}%

@@ -1,0 +1,20 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[136] biber-MSWIN64:340> INFO - === 
+[185] Biber.pm:419> INFO - Reading 'main.bcf'
+[296] Biber.pm:979> INFO - Found 16 citekeys in bib section 0
+[311] Biber.pm:4419> INFO - Processing section 0
+[323] Biber.pm:4610> INFO - Looking for bibtex file 'bibfile.bib' for section 0
+[386] bibtex.pm:1713> INFO - LaTeX decoding ...
+[408] bibtex.pm:1519> INFO - Found BibTeX data source 'bibfile.bib'
+[559] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[559] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[559] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'fr-FR'
+[559] Biber.pm:4245> INFO - No sort tailoring available for locale 'fr-FR'
+[579] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[595] bbl.pm:763> INFO - Output to main.bbl
+[596] Biber.pm:131> WARN - legacy month field 'June' in entry 'Zhou_2016_CVPR' is not an integer - this will probably not sort properly.
+[596] Biber.pm:131> WARN - legacy month field 'Oct' in entry 'Selvaraju_2017_ICCV' is not an integer - this will probably not sort properly.
+[596] Biber.pm:131> WARN - legacy month field 'June' in entry 'Wang_2020_CVPR_Workshops' is not an integer - this will probably not sort properly.
+[596] Biber.pm:131> WARN - legacy month field 'June' in entry 'Kendall_2018_CVPR' is not an integer - this will probably not sort properly.
+[596] Biber.pm:133> INFO - WARNINGS: 4
