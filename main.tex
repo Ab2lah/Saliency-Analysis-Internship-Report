@@ -55,9 +55,9 @@
         \Huge{\titleofdoc} 
 
         \vspace{0.5cm}
-        {\fontsize{15}{20}\textbf{ Mention: E3A}} \\      
+        {\fontsize{14.4}{14.4}\textbf{ Mention: E3A}} \\      
         
-        {\fontsize{15}{20}\textbf{Parcours : M2 Réalité Virtuelle et Systèmes Intelligents}}\\       
+        {\fontsize{14.4}{14.4}\textbf{Parcours : M2 Réalité Virtuelle et Systèmes Intelligents}}\\       
 
         \vspace{1 cm}
 
@@ -71,8 +71,8 @@
         Stage effectué du 01/04/2023 au 29/09/2023\\
         \vspace{3 cm}
 
-        \leftline{\fontsize{15}{12}\selectfont \textbf{Tuteur entreprise :}  M. Patrick Horain}
-        \leftline{\fontsize{15}{12}\selectfont \textbf{Tuteur pédagogique :} M. Hicham Hadj Abdelkader}
+        \leftline{\fontsize{14.4}{12}\selectfont \textbf{Tuteur entreprise :}  M. Patrick Horain}
+        \leftline{\fontsize{14.4}{12}\selectfont \textbf{Tuteur pédagogique :} M. Hicham Hadj Abdelkader}
         \vspace{1 cm}         
 	\end{center}
 \end{titlepage}
@@ -136,7 +136,7 @@
 	\centering
         \includegraphics[width=11.5cm]{logo/telecomsudparis.jpg} 
 	\caption{Campus de Télécom SudParis}
-	\label{fig:Aperçu de Grad-CAM}
+	\label{fig:Télécom SudParis}
 \end{figure}
 \section{Secteur d'activité }
 \hspace{1.6cm} Télécom SudParis est une école d'ingénieurs en télécommunications et technologies de l'information située à Évry, en France. Elle est classée dans le secteur de l'enseignement supérieur et est identifiée par le code APE 8542Z. Ce code APE désigne les établissements d'enseignement supérieur qui proposent des formations dans divers domaines tels que l'informatique, l'électronique, la télécommunication, etc.
@@ -272,7 +272,7 @@ Voici deux exemples \ref{fig:Exemples d'Activation : Activation Pertinente et No
 	\centering
         \includegraphics[width=16cm]{logo/CAM.png} 
 	\caption{Image d'IMAGENET avec sa boîte de vérité terrain (en vert) et sa CAM par rapport à la classe de vérité terrain (Tanche)}
-	\label{fig:Exemples d'image provenants d'IMAGENET avec leurs boîtes de vérité terrain}
+	\label{fig:Exemple d'image provenant d'IMAGENET avec sa carte d'activation}
 \end{figure}
 
 \hspace{1.6cm}Je vais présenter l'évolution des Cartes d'Activation Maximale (CAM) et leur fonctionnement, en mettant en évidence les avancées majeures de la recherche dans ce domaine. Je discuterai des avantages, des limitations et de leur utilisation concrète dans la classification d'images. En outre, je vais explorer la pertinence des CAM dans notre étude et comment elles peuvent améliorer la compréhension et l'interprétation de notre modèle de classification
@@ -590,6 +590,8 @@ Ces perspectives rapprochent notre travail des objectifs visés et reflètent no
     \end{figure}
 \newpage
 \hspace{1.6cm}Donc, un poids faible sur le MAGTR avec un poids fort sur le MANGTR n'empêche pas la dégradation du MAGTR, en revanche, il dégrade bien le MANGTR. C'est pourquoi nous avons essayé d'attribuer un poids nul au MAGTR et un poids fort sur le MANGTR, comme le démontrent les courbes d'apprentissage ci-dessous :
+\vspace*{1\baselineskip}
+
     \begin{figure}[htbp] 
 	\centering
         \adjustimage{width=0.95\textwidth, frame=0.5pt 1.5pt 2pt,center}{logo/sum_train_curves_man50.png}
@@ -600,10 +602,36 @@ Ces perspectives rapprochent notre travail des objectifs visés et reflètent no
 
 
 \hspace{1.6cm}Comme on a fait avec les experiences précedentes, aprés l'analyse des courbes d'apprentissage on passe au analyse des cartes d'activation, sauf ici on a changé la méthode du choix des images. On a pris les images qui ont été correctement classées à l'époque 0 et sont devenues mal classées, ainsi que les images qui ont été mal classées et sont devenues correctement classées. 
+\vspace*{1\baselineskip}
 
 \hspace{1.6cm}Ci-dessous, des exemples (de l'experience de la figure \ref{fig:Courbes d'apprentissage de l'expérience "somme-pondérée mangtr5095"} de ces images accompagnées de leurs activations correspondantes :
+\newpage
 
+    \begin{figure}[htbp] 
+	\centering
+        \adjustimage{width=0.86\textwidth, frame=0.5pt 1.5pt 2pt,center}{logo/concatenated_image.png}
+	\caption{Cartes d’activation par rapport à la classe de vérité terrain pour des images qui ont été mal classées et sont devenues correctement classées. À gauche, les images originales ; au milieu, les CAMs de l’époque 0 ; à droite, les CAMs de l’époque 15 de l'expérience \ref{fig:Courbes d'apprentissage de l'expérience "somme-pondérée mangtr5095"}.}
+	\label{fig:Cams for improved images"}
+    \end{figure}
+\hspace{1cm}On observe des améliorations dans les cartes d'activations de ces images \ref{fig:Cams for improved images"}, qui avaient été initialement mal classées mais sont maintenant correctement classées.  
+\newpage
+    \begin{figure}[htbp] 
+	\centering
+        \adjustimage{width=0.86\textwidth, frame=0.5pt 1.5pt 2pt,center}{logo/concatenated_image1.png}
+	\caption{Cartes d’activation par rapport à la classe de vérité terrain pour des images qui ont été correctement classées à l'époque 0 et sont devenues mal classées. À gauche, les images originales ; au milieu, les CAMs de l’époque 0 ; à droite, les CAMs de l’époque 15 de l'expérience \ref{fig:Courbes d'apprentissage de l'expérience "somme-pondérée mangtr5095"}.}
+	\label{fig:Cams for degraded images"}
+    \end{figure}
+\vspace*{1\baselineskip}
 
+\hspace{1cm}De même, nous constatons des améliorations dans les cartes d'activations des images  \ref{fig:Cams for degraded images"}, qui étaient à l'origine correctement classées mais sont désormais mal classées. Les prédictions pour ces images ne sont pas arbitraires, mais présentent des similitudes avec les images de la classe prédite, notamment en ce qui concerne les textures, les couleurs et les formes des objets dans l'image.
+\newpage
+\hspace{1cm}Prenons par exemple la première image, qui représente un poisson rouge incorrectement prédit comme une tanche. Cette confusion s'explique par le fait que la plupart des images de la classe "tanche" montrent des personnes tenant une tanche, tout comme cette image montre une personne tenant un poisson rouge dans ses deux mains. De plus, la forme de ce poisson rouge (un peu plus grand que les autres poissons rouges dans les autres images de la classe poisson rouge) est similaire à celle d'une tanche.
+\vspace*{1\baselineskip}
+
+\hspace{1cm}Dans le cas de la deuxième image, un mamba vert a été incorrectement prédit comme un épi de maïs. La ressemblance réside dans la texture de la peau du mamba vert, qui rappelle celle des épis de maïs, ainsi que dans leur couleur. Des similitudes de ce type se retrouvent également dans les deux dernières images de la figure \ref{fig:Cams for degraded images"}.
+\vspace*{1\baselineskip}
+
+\hspace{1cm}En conclusion, il est possible de constater que les erreurs de classification ne sont pas aléatoires, mais plutôt explicables, étant donné les similitudes observées. Cependant, il reste à prouver ces observations en utilisant une base de données propre et rigoureuse, telle que la base de données sur le paludisme, afin de valider nos conclusions.
 
 
 
